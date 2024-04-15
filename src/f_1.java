@@ -32,7 +32,7 @@ class StringUtil{
        for (int i = 0; i < str2.length()-str.length(); i++) {
            boolean currentStringisEqual = true;
            for (int j = i; j < i + str.length(); j++) {
-               if (str2.charAt(j) != str.charAt(j - 1)) {
+               if (str2.charAt(j) != str.charAt(j - i)) {
                    currentStringisEqual = false;
                }
            }
