@@ -14,9 +14,11 @@ class StringUtil{
         return reverseString;
     }
     public static String concat(String str1, String str2){
+
         return str1 + str2;
     }
     public static String concat(String str1, String str2, String str3){
+
         return str1 + str2 +str3;
     }
     public static boolean contains(String str ,char c) {
@@ -28,12 +30,13 @@ class StringUtil{
         return false;
 
     }
-    public static boolean contains(String str ,String str2) {
-       for (int i = 0; i < str2.length()-str.length(); i++) {
+    public static boolean contains(String str1 ,String str2) {
+       for (int i = 0; i < str2.length()-str1.length(); i++) {
            boolean currentStringisEqual = true;
-           for (int j = i; j < i + str.length(); j++) {
-               if (str2.charAt(j) != str.charAt(j - i)) {
+           for (int j = i; j < i + str1.length(); j++) {
+               if (str2.charAt(j) != str1.charAt(j - i)) {
                    currentStringisEqual = false;
+
                }
            }
            if (currentStringisEqual) return true;
